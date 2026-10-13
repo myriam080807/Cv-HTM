@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Myriam Estrella Avila Solis</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        background: #e9e9e7;
+        color: #222;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+    }
+    .page {
+        width: min(100%, 1000px);
+        margin: 30px auto;
+        background: #fff;
+        box-shadow: 0 8px 30px rgba(0,0,0,.10);
+        display: grid;
+        grid-template-columns: 31% 69%;
+        min-height: 1200px;
+    }
+    .sidebar {
+        background: #252525;
+        color: #f4f4f4;
+        padding: 42px 30px;
+    }
+    .main {
+        padding: 42px 45px;
+    }
+    .name {
+        font-size: 30px;
+        line-height: 1.08;
+        letter-spacing: .5px;
+        margin: 0 0 8px;
+        font-weight: 700;
+    }
+    .subtitle {
+        font-size: 13px;
+        color: #cfcfcf;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+    .main .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.7px;
+        margin: 30px 0 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d7d7d7;
+        color: #333;
+    }
+    .sidebar h2 {
+        color: #fff;
+        border-bottom-color: #555;
+        margin-top: 30px;
+    }
+    p { margin: 0 0 12px; font-size: 14px; }
+    .contact div {
+        margin: 10px 0;
+        font-size: 13px;
+        word-break: break-word;
+    }
+    .contact strong {
+        display: block;
+        color: #aaa;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    ul {
+        margin: 8px 0 0 18px;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 7px;
+        font-size: 13.5px;
+    }
+    .job {
+        margin-bottom: 25px;
+    }
+    .job-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+    .company {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+    .profile {
+        font-size: 14.5px;
+        color: #333;
+        max-width: 720px;
+    }
+    .skill {
+        margin: 11px 0;
+    }
+    .skill-name {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .bar {
+        height: 5px;
+        background: #555;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .bar span {
+        display: block;
+        height: 100%;
+        background: #ddd;
+    }
+    .education-item {
+        margin-bottom: 12px;
+        font-size: 13px;
+    }
+    .education-item strong { display: block; font-size: 14px; }
+    .muted { color: #aaa; }
+    .note {
+        font-size: 11px;
+        color: #777;
+        margin-top: 30px;
+    }
+    .print-btn {
+        position: fixed;
+        top: 18px;
+        right: 18px;
+        background: #252525;
+        color: #fff;
+        border: 0;
+        padding: 10px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    @media (max-width: 720px) {
+        .page {
+            margin: 0;
+            grid-template-columns: 1fr;
+            box-shadow: none;
+        }
+        .sidebar, .main { padding: 30px 24px; }
+        .name { font-size: 27px; }
+        .print-btn { top: 10px; right: 10px; }
+    }
+    @media print {
+        body { background: #fff; }
+        .page { margin: 0; width: 100%; box-shadow: none; }
+        .print-btn { display: none; }
+        @page { size: A4; margin: 0; }
+    }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Imprimir / Guardar PDF</button>
+
+<div class="page">
+    <aside class="sidebar">
+        <h1 class="name">Myriam Estrella<br>Avila Solis</h1>
+        <div class="subtitle">Estudiante de Ingeniería en Negocios</div>
+
+        <h2>Contacto</h2>
+        <div class="contact">
+            <div><strong>Ubicación</strong>Guadalajara, Jalisco</div>
+            <div><strong>Correo</strong>avilamyriam0807@gmail.com</div>
+            <div><strong>LinkedIn</strong>Perfil de LinkedIn</div>
+            <div><strong>Edad</strong>19 años</div>
+        </div>
+
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <div class="skill-name">Atención al cliente</div>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Ventas</div>
+            <div class="bar"><span style="width:88%"></span></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Organización</div>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Manejo de inventarios</div>
+            <div class="bar"><span style="width:82%"></span></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Trabajo en equipo</div>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Aprendizaje rápido</div>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <h2>Fortalezas</h2>
+        <ul>
+            <li>Responsabilidad y compromiso</li>
+            <li>Trato amable con clientes</li>
+            <li>Facilidad para aprender procesos</li>
+            <li>Iniciativa y autonomía</li>
+            <li>Organización y atención al detalle</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <div class="subtitle">Currículum Vitae</div>
+
+        <h2>Perfil profesional</h2>
+        <p class="profile">
+            Estudiante de Ingeniería en Negocios con experiencia en atención al cliente,
+            ventas, cobro, elaboración de pedidos y manejo de inventarios. Cuento con
+            experiencia en el uso de sistemas de punto de venta y registro de productos.
+            Actualmente desarrollo un emprendimiento independiente de aplicación de uñas,
+            fortaleciendo mis habilidades de servicio, organización y administración.
+        </p>
+        <p class="profile">
+            Busco incorporarme a una empresa donde pueda aplicar y desarrollar mis
+            conocimientos de negocios, administración y servicio al cliente, adquirir
+            experiencia profesional y contribuir al cumplimiento de los objetivos de la
+            organización.
+        </p>
+
+        <h2>Experiencia profesional</h2>
+
+        <div class="job">
+            <div class="job-title">Emprendimiento independiente — Aplicación de uñas</div>
+            <div class="company">Atención al cliente · Organización · Administración</div>
+            <ul>
+                <li>Atención directa y seguimiento a clientes.</li>
+                <li>Gestión y organización de citas y servicios.</li>
+                <li>Administración de materiales necesarios para la prestación del servicio.</li>
+                <li>Promoción de servicios y trato personalizado con clientes.</li>
+                <li>Organización de ingresos y operación del emprendimiento.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">Vendedora — Tienda de ropa</div>
+            <div class="company">Ventas · Atención al cliente · Cobro</div>
+            <ul>
+                <li>Atención y asesoría a clientes durante sus compras.</li>
+                <li>Venta y recomendación de prendas de acuerdo con las necesidades del cliente.</li>
+                <li>Realización de cobros y manejo de efectivo.</li>
+                <li>Elaboración y entrega de notas de compra.</li>
+                <li>Apoyo en la organización de mercancía.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-title">Vendedora — Pastelería</div>
+            <div class="company">Ventas · Pedidos · Sistema de punto de venta · Inventario</div>
+            <ul>
+                <li>Venta de productos de mostrador y atención directa al cliente.</li>
+                <li>Registro y captura de pedidos en computadora.</li>
+                <li>Procesamiento de cobros mediante el sistema de punto de venta.</li>
+                <li>Generación de tickets para las compras realizadas.</li>
+                <li>Registro de productos vendidos y actualización automática del inventario.</li>
+            </ul>
+        </div>
+
+        <h2>Formación académica</h2>
+        <div class="education-item">
+            <strong>Ingeniería en Negocios</strong>
+            Carrera universitaria — Actualmente en curso
+        </div>
+
+        <h2>Objetivo profesional</h2>
+        <p>
+            Desarrollarme profesionalmente en áreas de administración, operaciones,
+            ventas, servicio al cliente o gestión de negocios, con la posibilidad de
+            asumir progresivamente mayores responsabilidades dentro de una organización.
+        </p>
+
+        <h2>Competencias</h2>
+        <ul>
+            <li>Atención y servicio al cliente</li>
+            <li>Ventas y manejo de cobros</li>
+            <li>Registro y seguimiento de pedidos</li>
+            <li>Manejo básico de sistemas de punto de venta</li>
+            <li>Control y seguimiento de inventarios</li>
+            <li>Organización de actividades y recursos</li>
+            <li>Comunicación efectiva</li>
+        </ul>
+
+        <p class="note">
+            Referencias disponibles a solicitud.
+        </p>
+    </main>
+</div>
+</body>
+</html>
